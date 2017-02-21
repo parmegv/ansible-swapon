@@ -1,5 +1,9 @@
 ---
 - hosts: localhost
   remote_user: root
+  pre_tasks:
+    - name: Turn swap off
+      command: swapoff -a
+      become: yes
   roles:
     - ansible-swapon
