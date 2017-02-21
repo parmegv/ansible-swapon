@@ -5,5 +5,9 @@
     - name: Turn swap off
       command: swapoff -a
       become: yes
+    - name: Check if we really do not have swap
+      assert:
+        that:
+          - "{{ ansible_swaptotal_mb }} < 1"
   roles:
     - ansible-swapon
