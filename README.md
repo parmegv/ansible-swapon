@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/parmegv/ansible-swapon.svg?branch=master)](https://travis-ci.org/parmegv/ansible-swapon)
+
 Role Name
 =========
 
