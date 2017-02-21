@@ -1,0 +1,4 @@
+---
+# defaults file for ansible-swapon
+swap_file: "/swapfile"
+memory_amount: "{{ (ansible_memtotal_mb / 1000 / 2)|round(0, 'ceil')|int }}G"
